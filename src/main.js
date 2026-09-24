@@ -1054,7 +1054,7 @@ function preloadIntroAssets() {
   ];
   return Promise.race([
     Promise.all(assets.map((src) => preloadImage(src))),
-    new Promise((resolve) => setTimeout(resolve, 800)),
+    new Promise((resolve) => setTimeout(resolve, 250)),
   ]);
 }
 
@@ -1069,7 +1069,7 @@ function beginIntro() {
   }
   introPhase = 'playing';
   render();
-  introTimers.push(setTimeout(finishIntro, 2200));
+  introTimers.push(setTimeout(finishIntro, 1750));
 }
 
 function finishIntro() {
@@ -1085,7 +1085,7 @@ function finishIntro() {
       introPhase = 'idle';
       render();
     }
-  }, 720));
+  }, 300));
 }
 
 function skipIntro(event) {

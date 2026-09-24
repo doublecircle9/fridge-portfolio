@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "FridgeDisplay";
-  src: url("../public/assets/fonts/XiangJiaoKuanMaoShuaLingGanTi-2.ttf") format("truetype");
+  src: url("../public/assets/fonts/fridge-display-latin.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -52,7 +52,7 @@ button {
 
 .page-background {
   z-index: 0;
-  background-image: url("../public/assets/ui/sunlight-room-background.png");
+  background-image: url("../public/assets/ui/sunlight-room-background.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
